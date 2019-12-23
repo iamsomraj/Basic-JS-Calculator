@@ -10,11 +10,15 @@ Basic JS Calculator is a mathematical calculator where an user will be able to e
 4. Logging arrays to store the data
 5. Understanding the difference between undefined and null
 
+## Click Here
+
+[Live Calculator](https://iamsomraj.github.io/Basic-JS-Calculator/index.html)
+
 ## Developer
 
 Somraj Mukherjee
 
-## Show your support
+## Show Your Support
 
 Give me a star if this project helped you
 
