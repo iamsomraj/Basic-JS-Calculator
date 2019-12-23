@@ -12,7 +12,7 @@ Basic JS Calculator is a mathematical calculator where an user will be able to e
 
 ## Click Here
 
-[Live Calculator](https://iamsomraj.github.io/Basic-JS-Calculator/index.html)
+[Click here](https://iamsomraj.github.io/Basic-JS-Calculator/index.html) to see my project.
 
 ## Developer
 
