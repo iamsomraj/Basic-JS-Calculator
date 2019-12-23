@@ -2,10 +2,6 @@
 
 Basic JS Calculator is a mathematical calculator where an user will be able to enter a number and also select the available four operators ( Addition , Subtraction , Multiplication and Division ) .
 
-## Screenshot
-
-![Screenshot (48)](Screenshot (48).png)
-
 ## Objectives
 
 1. Learning basic JS syntax
