@@ -13,6 +13,7 @@ Basic JS Calculator is a mathematical calculator where an user will be able to e
 3. Working with objects
 4. Logging arrays to store the data
 5. Understanding the difference between undefined and null
+6. Using the Javascript Control Statements
 
 ## Developer
 

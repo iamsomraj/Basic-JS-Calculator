@@ -9,6 +9,8 @@ function getUserNumberInput() {
 
 function createTheOutput(operator, resultBefore, number) {
   const resultDescription = resultBefore + ' ' + operator + ' ' + number;
+  // to remove the previous input
+  userInput.value = '';
   // function from the verndor js file
   outputResult(currentResult, resultDescription); // current result is outside scope of the function
 }
@@ -25,36 +27,55 @@ function createTheLog(operator, previousNumber, enteredNumber, resultNumber) {
   console.log(logEntries);
 }
 
-function add() {
+function calculateTheResult(calculationType) {
+  if (
+    calculationType !== 'ADD' &&
+    calculationType !== 'SUBTRACT' &&
+    calculationType !== 'MULTIPLY' &&
+    calculationType !== 'DIVISION'
+  ) {
+    return;
+  }
+
   const number = getUserNumberInput();
+
+  if (!number) {
+    return;
+  }
+
   const initialResult = currentResult;
-  currentResult = currentResult + number;
-  createTheOutput('+', initialResult, number);
-  createTheLog('ADD', initialResult, number, currentResult);
+  let mathOperator;
+  if (calculationType === 'ADD') {
+    mathOperator = '+';
+    currentResult = currentResult + number;
+  } else if (calculationType === 'SUBTRACT') {
+    mathOperator = '-';
+    currentResult = currentResult - number;
+  } else if (calculationType === 'MULTIPLY') {
+    mathOperator = '*';
+    currentResult = currentResult * number;
+  } else if (calculationType === 'DIVISION') {
+    mathOperator = '/';
+    currentResult = currentResult / number;
+  }
+  createTheOutput(mathOperator, initialResult, number);
+  createTheLog(calculationType, initialResult, number, currentResult);
+}
+
+function add() {
+  calculateTheResult('ADD');
 }
 
 function substract() {
-  const number = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult = currentResult - number;
-  createTheOutput('-', initialResult, number);
-  createTheLog('SUBTRACT', initialResult, number, currentResult);
+  calculateTheResult('SUBTRACT');
 }
 
 function multiply() {
-  const number = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult = currentResult * number;
-  createTheOutput('*', initialResult, number);
-  createTheLog('MULTIPLY', initialResult, number, currentResult);
+  calculateTheResult('MULTIPLY');
 }
 
 function division() {
-  const number = getUserNumberInput();
-  const initialResult = currentResult;
-  currentResult = currentResult / number;
-  createTheOutput('/', initialResult, number);
-  createTheLog('DIVISION', initialResult, number, currentResult);
+  calculateTheResult('DIVISION');
 }
 
 addBtn.addEventListener('click', add);
