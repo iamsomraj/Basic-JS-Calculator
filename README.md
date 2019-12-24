@@ -2,6 +2,10 @@
 
 Basic JS Calculator is a mathematical calculator where an user will be able to enter a number and also select the available four operators ( Addition , Subtraction , Multiplication and Division ) .
 
+## Click Here
+
+[Click here](https://iamsomraj.github.io/Basic-JS-Calculator/index.html) to see my project.
+
 ## Objectives
 
 1. Learning basic JS syntax
@@ -10,13 +14,11 @@ Basic JS Calculator is a mathematical calculator where an user will be able to e
 4. Logging arrays to store the data
 5. Understanding the difference between undefined and null
 
-## Click Here
-
-[Click here](https://iamsomraj.github.io/Basic-JS-Calculator/index.html) to see my project.
-
 ## Developer
 
-Somraj Mukherjee
+LinkedIn : [iamsomraj](https://www.linkedin.com/in/iamsomraj/)
+
+HackerRank: [iamsomraj](https://www.hackerrank.com/iamsomraj?hr_r=1) 
 
 ## Show Your Support
 
@@ -29,4 +31,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
